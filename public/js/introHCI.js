@@ -26,10 +26,10 @@ function addProjectDetails(e) {
     // get rid of 'project' from the front of the id 'project3'
     var idNumber = projectID.substr('project'.length);
 
-    var projectURL = $.get("http://localhost:3000/project/" + idNumber, callBackFunc);
+    var projectURL = $.get("https://lab6-tt.herokuapp.com/project/" + idNumber, callBackFunc);
 
     console.log("User clicked on project " + idNumber);
-    console.log("Project URL " + "http://localhost:3000/project/" + idNumber);
+    console.log("Project URL " + "https://lab6-tt.herokuapp.com/project/" + idNumber);
 }
 
 function callBackFunc(result) {
